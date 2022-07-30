@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="../css/villa.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="../media/icon.png">
+        <title>Villa4U || Amsterdam IJburg West</title>
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <nav>
+                    <div id="nav-grid">
+                        <a id="logo" href="../index.html"><img src="../media/logo.png" alt="logo"></a>
+                        <a id="homeNav" href="../index.html">Home</a>
+                        <a id="contactNav" href="../contact/contact.html">Contact</a>
+                        <h1>Villa4U</h1>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="wrapper">
+        <main>
+            <article id="villa-fotos">   
+                <a data-fancybox="gallery" data-caption="Voorkant Huis" href="../media/l2/main.jpg">
+                    <img src="../media/l2/main.jpg" alt="main"></a>
+                <a data-fancybox="gallery" data-caption="Terras" href="../media/l2/sub1.jpg">
+                    <img src="../media/l2/sub1.jpg" alt="sub1"></a>
+                <a data-fancybox="gallery" data-caption="Pier" href="../media/l2/sub2.jpg">
+                    <img src="../media/l2/sub2.jpg" alt="sub2"></a>
+                <a data-fancybox="gallery" data-caption="Woonkamer" href="../media/l2/sub3.jpg">
+                    <img src="../media/l2/sub3.jpg" alt="sub3"></a>          
+                <a data-fancybox="gallery" data-caption="Keuken" href="../media/l2/sub4.jpg">
+                    <img src="../media/l2/sub4.jpg" alt="sub4"></a>
+                <a data-fancybox="gallery" data-caption="Slaapkamer" href="../media/l2/sub5.jpg">
+                    <img src="../media/l2/sub5.jpg" alt="sub5"></a>
+                <a data-fancybox="gallery" data-caption="Badkamer" href="../media/l2/sub6.jpg">
+                    <img src="../media/l2/sub6.jpg" alt="sub6"></a>
+                <a data-fancybox="gallery" data-caption="Zolder" href="../media/l2/sub7.jpg">
+                    <img src="../media/l2/sub7.jpg" alt="sub7"></a>
+            </article>
+            <article id="villa-info">
+                <aside id="info">
+                    <h2>Amsterdam IJburg West</h2>
+                    <p id="postcode">1087 KB Lisdoddelaan 15</p>
+                    <br>
+                    <p id="info-links">275 m² wonen</p>
+                    <p id="info-mid">270 m² perceel</p>
+                    <p id="info-rechts">5 slaapkamers</p>
+                    <br>
+                    <strong id="prijs">€ 1.850.000 k.k.</strong>
+                </aside>
+                <br>
+                <article id="villa-bied">
+                    <form id="bied">
+                        <label for="voornaam">Voornaam:</label>
+                        <input class="bied" type="text" id="voornaam" required="required" placeholder="John" name="voornaam">
+                        <label for="achternaam">Achternaam:</label>
+                        <input class="bied" type="text" id="achternaam" required="required" placeholder="Doe" name="achternaam">        
+                        <label for="getal">Prijs:</label>
+                        <input  class="bied" type="number" id="getal" required="required" placeholder="0" name="getal" min="1850000">
+                        <input type="submit" onclick="start()" id="knop">
+                    </form>
+                </article>
+                <div id="resultaat"></div>
+                <br>
+            </article>
+            <hr>
+            <article id="villa-kenmerken">
+                <h2>Omschrijving</h2>
+                <br>
+                <div id="tekst">
+                    <p>
+                        FANTASTISCH BEACHHOUSE, EN WAT EEN KAVEL, 12 METER BREED, ECHT UNIEK! EN WAT EEN VILLA, CA 275 M2, MET DRIE GROTE DAKTERRASSEN, 5 SLAAPKAMERS, 4 BADKAMERS, EEN APARTE WERKKAMER/AUPAIR RUIMTE MET EIGEN OPGANG. TWEE PARKEERPLAATSEN. LIGGING AAN HET EIND -HET DOODLOPEND DEEL- VAN DE LISDODDELAAN, HET OPEN WATER, DIEMERSTRANDJE EN HET DIEMERPARK ZIJN VAN ALLE KANTEN TE ZIEN. PRACHTIGE GROTE MODERNE TUIN MET DIVERSE ZITPLAATSEN TEVENS OPBERG KISTEN EN EEN INBOUW TRAMPOLINE. NATUURLIJK MET EIGEN STEIGER VOOR JE BOOT EN EEN DRIJVEND TERRAS. HET HUIS HEEFT EEN GRIJSWATER CIRCUIT, GASLOOS, VOORBEREIDING ZONNEPANELLEN EN DIVERSE GROEN DAKEN. EEN EPC VAN SLECHTS 0,4.
+                        <br>
+                        VERBOUWD IN 2017 T/M 2020. ALLES IS NIEUW EN TOT IN PERFECTIE AFGEWERKT! <span id="dots">. . . .</span> 
+                    <div id="volledig">
+                        <br>
+                        <br>
+                        Lees hieronder snel verder,
+                        <br>
+                        <br>
+                        <b>HIGHLIGHTS:</b>
+                        <br>
+                        -Erfpacht afgekocht tot 2052, overstap naar eeuwigdurende erfpacht is al reeds gedaan en vastgelegd bij de notaris!
+                        <br>
+                        -Unieke kavel, een gevelbreedte van 12 meter met drie openslaande deuren naar de zeer grote tuin.
+                        <br>
+                        -De tuin is onder architectuur aangelegd, U waant zich in een tropisch resort, door de breedte en diepte met het dijk lichaam heb je hier de hele dag en avond vol de zon!
+                        <br>
+                        -Sustainable gebouwd, combinatie van beton, hout, en staal, gebouwd met Duitse grundlichkeit.
+                        in 2004 door de eerste eigenaar onder leiding van Claudia Schmit van MIR Architecten ontwikkeld. Deze heeft indertijd al de nieuwbouw prijs gewonnen door o.a de bijzondere bouw en constructie. In 2017 t/m 2020 verder ontwikkeld met dezelfde Architect.
+                        <br>
+                        -Volledig verbouwd, de huidige eigenaar heeft alles uit de kast getrokken om zijn droom villa te realiseren. (nieuwe indeling, alle vloeren en muren vervangen, stuuk werk, nieuwe elektra, badkamers, tuin en oprit, uitbouw en opbouw, noem het maar op.
+                        <br>
+                        -Zowel van buiten als binnen recent geschilderd, erkende schilder met hoogglanslak, vakmanschap!
+                        <br>
+                        -De villa is gebouwd met "open structuur" d.w.z dat alle binnen muren weg of verplaats kunnen worden.
+                        <br>
+                        -Geen contact geluiden met buurpanden, ankerloze spouwmuren (vrijstaand).
+                        <br>
+                        -Diverse alternatieve indelingen mogelijk, zie de plattegronden.
+                        <br>
+                        -Nieuwe keuken -Custom made- met Gaggenau apparatuur en Bora inductie plaat, afzuiging naar buiten via de vloer en weggewerkt in de gevel. (stoom oven, combi oven, vaatwasser, vriezer en koelkast).
+                        <br>
+                        -Uitbouw en opbouw gerealiseerd in 2019/2020.
+                        <br>
+                        -Gevel van Siberisch lariks/Douglas hout, extra verduurzaamd, bestendig tegen extreme weercondities en onderhoudsvriendelijk, de gevel is recent nog schoongemaakt en geïmpregneert tegen groenalg.
+                        <br>
+                        -Vier badkamers -allemaal nieuw- voorzien van duur tegelwerk van Intercodam (Dechirer decor grigio by Patricia Urguiola) met inbouwkranen en rainshowers van Dornbracht, gecombineerd met beton cirè, subliem en tijdloos.
+                        <br>
+                        -Hydrofoor aanwezig voor extra waterdruk.
+                        <br>
+                        -Zowel de wastafels als de keuken zijn uit één stuk vervaardigd van het materiaal "solar surface" beter bekend als Corian.
+                        <br>
+                        -Drie buiten terrassen, hier kan je al vanaf maart volop in de zon zitten met schitterende vergezichten over het water, Diemerpark.
+                        <br>
+                        -Op elk terras zijn planten bakken met automatische water druppeling en groen daken voor de biodiversiteit. De bewatering is op het grijs water systeem aangesloten. De planten bakken zijn geïntegreerd met de gevel en dienen ook als afscheiding met de buurpanden. Op één van de bovenste terrassen staat een buitendouche van het top merk Jee-o met verwarming element voor in de winter.
+                        <br>
+                        -Lichtplan door de gehele woning, diverse inbouw en wandspots allen van zwart staal, o.a van het merk Modular.
+                        led verlichting geïntegreerd boven de bureaus en ook in de keuken en bijkeuken.
+                        <br>
+                        -Buiten verlichting rondom de woning met beweging sensoren en licht schaduw sensoren.
+                        <br>
+                        -De elektra is grotendeels vernieuwd, domotica systeem is aangelegd en er zijn twee meterkasten, één voor het "benedenhuis" en één voor het "bovenhuis".
+                        <br>
+                        -Dubbele bewoning mogelijk, zie alternatieve indeling op de plattegronden.
+                        Slaapkamers genoeg maar liefst 5/6 stuks allemaal met eigen bureau en inbouwkasten ook Custom made (Houtwerk interieur realisatie) van zwart geborsteld eiken. De slaapkamers grenzen ieder aan hun eigen terras met openslaande deuren.
+                        <br>
+                        -Rondom het huis en de terrassen zijn parasols geplaatst van het A-merk Umbrosa, inklapbaar met beschermhoes, de kers op de taart..
+                        <br>
+                        -De werkkamer/aupair kamer/ slaapkamer begane grond heeft een eigen opgang en badkamer (douche, wastafel, toilet).
+                        <br>
+                        -Tweede badkamer op de begane grond om je af te spoelen na het zwemmen, wakeboarden e.d.
+                        <br>
+                        -Prachtige stalen taatsdeuren, ook de trap opgang is dichtgezet met zwart staal en glas hierdoor geen warmteverlies en geluid.
+                        <br>
+                        -Ruim en statige entree, met drie hoofddeuren: begane grond, werkkamer/kantoor en het bovenhuis.
+                        <br>
+                        -Parkeren op eigen terrein, twee plekken, voorbereiding voor elektrisch rijden is aangelegd.
+                        <br>
+                        -Originele houthaard van Harry Leenders (collectors item).
+                        <br>
+                        -Mogelijkheid om inpandige garage plek te maken, vraag naar de makelaar om info.
+                        <br>
+                        -Het vaarwater achter in de tuin is diep en wordt regelmatig uitgebaggerd door de gemeente, hier ervaar je het ultieme water gevoel, zwemen, suppen, kanoën noem het maar op, hier gebeurd het.
+                        <br>
+                        <br>
+                        <b>DE TUIN:</b>
+                        <br>
+                        De tuin ligt aan het water waar je naar je eigen steiger loopt met plek voor twee boten. Je vaart hier zonder door een sluis te hoeven het ruime water op van het Markenmeer. Met je boot naar Volendam om vis te halen, dagje markenwadden, de randmeren op en lunchen op de Vecht. Uiteraard ook Amsterdam in, met een boot achter je huis blijf je varen. Er ligt tevens een vlot van 12 m2 waar je lekker kan chillen, zonen, of vanaf kan duiken. Het water is schoon! Het voordeel van deze kant van het Rieteiland is dat hier een vaargeul ligt die gebaggerd wordt waardoor je 2,5 meter diepgang hebt en dus lekker kan zwemmen en je boot altijd voldoende water onder de kiel heeft. Ook als de westerwind het water wegblaast.
+                        <br>
+                        <br>
+                        <b>OVERIGE BIJZONDERHEDEN:</b>
+                        <br>
+                        -Grijswater systeem met ondergrondse opslagtank (hemelwater wordt dus opgevangen!), voor de toiletten, plantenbakken, en diverse grassoorten bij de oprit.
+                        <br>
+                        -Ingemeten conform de Nen 2580 meetnorm, meetrapport aanwezig, er kunnen geringe verschillen/interpretatie zijn met het opmeten/inmeten van een object.
+                        <br>
+                        -Zowel de oprit als het terras in de achtertuin en de begane grond vloer is van gevlinderd beton, deze is industrieel gelegd en tijdloos.
+                        <br>
+                        -Door het hele huis ligt intranet, iedere kamer heeft een aansluiting, er zijn ook wifi versterkers aangebracht.
+                        <br>
+                        -B&O systeem begane grond, bedrading e.d. zijn weggewerkt in de muren en vloeren, overname is bespreekbaar.
+                        <br>
+                        -Op de eerste verdieping is een extra Fermacell vloer gelegd tegen contactgeluid.
+                        <br>
+                        -Zeer lichte woning door de vele raam partijen en openslaande deuren, ook zijn er twee grote lichtkoepels aangebracht, vanuit iedere hoek schijnt de zon naar binnen.
+                        <br>
+                        <br>
+                        <b>IJBURG:</b>
+                        <br>
+                        IJburg is duidelijk in opkomst en biedt een jachthaven met vele restaurants aan het water, nieuwe trendy cafés, een filmhuis en theater, diverse activiteiten op het gebied van sport, kunst en cultuur, verschillende parken, een watersportvereniging en artistieke Amsterdamse winkeltjes. Opvallend aan de bevolkingssamenstelling is dat hier veel creatieve en ondernemende mensen wonen. Dit vind je terug in de bijzondere architectuur waar bewoners vaak zelf een hand in hebben gehad.
+                        <br>
+                        <br>
+                        Het Diemerpark, ter grootte van twee keer het Vondelpark en waar men naar hartenlust kan wandelen, hardlopen, fietsen en skaten, ligt op loopafstand. Er bevindt zich een voetbal- en hockeyclub en het park heeft zelfs een eigen strandje met zonneweide.
+                        <br>
+                        <br>
+                        Op het Haveneiland is een winkelcentrum met onder andere ambachtelijke verswinkels, diverse lunch- en espressobars, een grote Albert Heijn, een biologische supermarkt, de HEMA, Vomar, kappers, Action en Bruna met een PostNL-postkantoor. Op het plein achter het winkelcentrum is wekelijks een gezellige markt. Ook zijn er voorzieningen zoals basisscholen, het IJburg College voor voortgezet onderwijs (VWO, HAVO en VMBO), kinderopvang, bibliotheken, sportscholen en een medisch centrum. Daarnaast mag de grote jachthaven E. Peek vermeld worden; ook deze ligt op loopafstand. Door het vele omringende water en de bevaarbare grachten heeft IJburg een maritieme inslag.
+                        <br>
+                        <br>
+                        IJburg is een waterrijke, rustige en inspirerende omgeving. Een ideale locatie om te wonen met het centrum van Amsterdam via tram 26 op 10 minuten afstand. De A1, A9 en en de ring A10 zijn binnen een minuut te bereiken. Het is een prachtig alternatief voor mensen die ruim, stads en buiten willen wonen, maar eigenlijk toch het liefst verbonden willen blijven met het centrum van Amsterdam. Kortom, een heerlijk centrale waterrijke plek om te wonen.
+                    </div>
+                    <br>
+                    <button onclick="meerInfo()" id="infoKnop">Meer weergeven</button>
+                    <br>
+                </div>
+            </article>
+            <article id="villa-omschrijving">
+            <h2>Kenmerken</h2>
+            <br>
+            <h4>Overdrachten</h4>
+            <br>
+            <p class="kenmerken-links">Vraagprijs</p>  <p class="kenmerken-rechts">€ 1.850.000 k.k.</p>
+            <hr class="lijn"> 
+            <br>
+            <p class="kenmerken-links">Vraagprijs per m²</p>  <p class="kenmerken-rechts">€ 6.727</p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">Aangeboden sinds</p> <p class="kenmerken-rechts"> 4 weken</p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">Status</p> <p class="kenmerken-rechts"> Beschikbaar </p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">Aanvaarding</p> <p class="kenmerken-rechts"> In overleg </p>
+            <hr class="lijn">
+            <br>
+            <br>
+            <h4>Bouw</h4>
+            <br>
+            <hr class="lijn"> 
+            <br>
+            <p class="kenmerken-links">Soort woonhuis</p>  <p class="kenmerken-rechts">Villa, vrijstaande woning</p>
+            <hr class="lijn"> 
+            <br>
+            <p class="kenmerken-links">Soort bouw</p>  <p class="kenmerken-rechts">Bestaande bouw</p>
+            <hr class="lijn"> 
+            <br>
+            <p class="kenmerken-links">Bouwjaar</p>  <p class="kenmerken-rechts">2004</p>
+            <hr class="lijn"> 
+            <br>
+            <p class="kenmerken-links">Soort dak</p>  <p class="kenmerken-rechts">plat dak bedekt met bitumineuze dakbedekking</p>
+            <hr class="lijn"> 
+            <br>
+            <br>
+            <h4>Oppervlakte en inhoud</h4>
+            <br>
+            <hr class="lijn"> 
+            <br>
+            <h4>gebruiksoppervlakten</h4>
+            <hr class="lijn"> 
+            <br>
+            <p class="kenmerken-links">Wonen</p>  <p class="kenmerken-rechts">275 m²</p>
+            <hr class="lijn"> 
+            <br>
+            <p class="kenmerken-links">Gebouwgebonden buitenruimte</p>  <p class="kenmerken-rechts">65 m²</p>
+            <hr class="lijn"> 
+            <br>
+            <p class="kenmerken-links">Perceel</p>  <p class="kenmerken-rechts">270 m²</p>
+            <hr class="lijn"> 
+            <br>
+            <p class="kenmerken-links">inhoud</p>  <p class="kenmerken-rechts">941 m²</p>
+            <hr class="lijn"> 
+            <br>
+            <br>
+            <h4>Indeling</h4>
+            <br>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">Aantal kamers</p>  <p class="kenmerken-rechts">9 kamers (6 slaapkamers)</p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">Aantal badkamers</p>  <p class="kenmerken-rechts">4 badkamers en 1 apart toilet</p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">Badkamervoorzieningen</p>  <p class="kenmerken-rechts">Ligbad, 4 douches en 3 toiletten</p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">Aantal woonlagen</p>  <p class="kenmerken-rechts">3 woonlagen</p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">Voorziening</p>  <p class="kenmerken-rechts">Domotica, glasvezelkabel,mechanische ventilatie en schuifpui</p>
+            <hr class="lijn">
+            <br>
+            <br>
+            <h4>Energie</h4>
+            <br>
+            <p class="kenmerken-links">Energielabel</p>  <p class="kenmerken-rechts">A</p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">Isolatie</p>  <p class="kenmerken-rechts">Dubbel glas en volledig geÏsoleerd</p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">verwarming</p>  <p class="kenmerken-rechts">Houtkachel, stadsverwarming en gedeeltelijke vloerverwarming</p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">Warm water</p>  <p class="kenmerken-rechts">Stadsverwarming</p>
+            <hr class="lijn">
+            <br>
+            <br>
+            <h4>Kadastrale gegevens</h4>
+            <br>
+            <p class="kenmerken-links">Amsterdam AU 646</p>  <p class="kenmerken-rechts">Kadastrale kaart</p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">Oppervlakte</p>  <p class="kenmerken-rechts">270 m²</p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">eigendomssituatie</p>  <p class="kenmerken-rechts">Gemeentelijke erfpacht</p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">Lasten</p>  <p class="kenmerken-rechts">afgekocht 15-06-2052</p>
+            <hr class="lijn">
+            <br>
+            <br>
+            <h4>Buitenruimte</h4>
+            <br>
+            <p class="kenmerken-links">ligging</p>  <p class="kenmerken-rechts">Aan rustige weg, aan vaarwater, aan water, in woonwijk, open liggig en vrij uitzicht</p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">Tuin</p>  <p class="kenmerken-rechts">Achtertuin</p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">Achtertuin</p>  <p class="kenmerken-rechts">180 m²(15 meter diep en 12 meter breed)</p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">Ligging tuin</p>  <p class="kenmerken-rechts">gelegen op het zuidoosten</p>
+            <hr class="lijn">
+            <br>
+            <p class="kenmerken-links">Balkon/dakterras</p>  <p class="kenmerken-rechts">Balkon aanwezig</p>
+            <hr class="lijn">
+            <br>
+            <br>
+            <h4>Garage</h4>
+            <br>
+            <p class="kenmerken-links">Soort garage</p>  <p class="kenmerken-rechts">Carport en parkeerplaats</p>
+            <hr class="lijn">
+            <br>
+            <br>
+            <h4>Parkeergelegenheid</h4>
+            <br>
+            <p class="kenmerken-links">Soort parkeergelegenheid</p>  <p class="kenmerken-rechts">Op eigen terrein</p>
+            <hr class="lijn">
+            <br>
+            <br>
+            </article>
+        </main>
+        </div>
+        <footer>
+            <div class="wrapper">
+                <div id="fcontainer">
+                    <ul id="flinks">
+                        <li><a href="https://www.facebook.com/" target="_blank"><img src="../media/facebook.svg" alt="facebook"></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><img src="../media/instagram.svg" alt="instagram"></a></li>
+                        <li><a href="https://www.twitter.com/" target="_blank"><img src="../media/twitter.svg" alt="twitter"></a></li>
+                    </ul>
+                    <p id="ftekst">© Copyright 2021. All rights reserved Terms of Service | Privacy Policy | Cookie Policy</p>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/villa.js"></script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/jquery.fancybox.min.js"></script>
+    </body>
+</html>

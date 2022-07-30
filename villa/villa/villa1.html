@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="../css/villa.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="../media/icon.png">
+        <title>Villa4U || Breda Ruitersbos</title>
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <nav>
+                    <div id="nav-grid">
+                        <a id="logo" href="../index.html"><img src="../media/logo.png" alt="logo"></a>
+                        <a id="homeNav" href="../index.html">Home</a>
+                        <a id="contactNav" href="../contact/contact.html">Contact</a>
+                        <h1>Villa4U</h1>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="wrapper">
+            <main>
+                <article id="villa-fotos">   
+                    <a data-fancybox="gallery" data-caption="Achterkant Huis" href="../media/l1/main.jpg">
+                        <img src="../media/l1/main.jpg" alt="main"></a>
+                    <a data-fancybox="gallery" data-caption="Ingang" href="../media/l1/sub1.jpg">
+                        <img src="../media/l1/sub1.jpg" alt="sub1"></a>
+                    <a data-fancybox="gallery" data-caption="Slaapkamer" href="../media/l1/sub2.jpg">
+                        <img src="../media/l1/sub2.jpg" alt="sub2"></a>
+                    <a data-fancybox="gallery" data-caption="Woonkamer" href="../media/l1/sub3.jpg">
+                        <img src="../media/l1/sub3.jpg" alt="sub3"></a>          
+                    <a data-fancybox="gallery" data-caption="Voorkant Huis" href="../media/l1/sub4.jpg">
+                        <img src="../media/l1/sub4.jpg" alt="sub4"></a>
+                    <a data-fancybox="gallery" data-caption="Zwembad" href="../media/l1/sub5.jpg">
+                        <img src="../media/l1/sub5.jpg" alt="sub5"></a>
+                    <a data-fancybox="gallery" data-type="iframe" data-caption="Plattegrond - Begane Grond" data-src="plattegrond/plattegrond0.html">
+                        <img src="../media/l1/pg0.png" alt="Plattegrond"></a>
+                    <a data-fancybox="gallery" data-type="iframe" data-caption="Plattegrond - Eerste Verdieping" data-src="plattegrond/plattegrond1.html">
+                        <img src="../media/l1/pg1.png" alt="Plattegrond"></a>
+                </article>
+                <article id="villa-info">
+                    <aside id="info">
+                        <h2>Breda Ruitersbos</h2>
+                        <p id="postcode">4837 CT Ravellaan 1</p>
+                        <br>
+                        <p id="info-links">257 m² wonen</p>
+                        <p id="info-mid">889 m² perceel</p>
+                        <p id="info-rechts">5 slaapkamers</p>
+                        <br>
+                        <b id="prijs">€ 1.487.500 k.k.</b>
+                    </aside>
+                    <br>
+                    <article id="villa-bied">
+                        <form id="bied">
+                            <label for="voornaam">Voornaam:</label>
+                            <input class="bied" type="text" id="voornaam" required="required" placeholder="John" name="voornaam">
+                            <label for="achternaam">Achternaam:</label>
+                            <input class="bied" type="text" id="achternaam" required="required" placeholder="Doe" name="achternaam">        
+                            <label for="getal">Prijs:</label>
+                            <input  class="bied" type="number" id="getal" required="required" placeholder="0" name="getal" min="1487500">
+                            <input type="submit" onclick="start()" id="knop">
+                        </form>
+                    </article>
+                    <div id="resultaat"></div>
+                    <br>
+                </article>
+                <hr>
+                <article id="villa-kenmerken">
+                    <h2>Omschrijving</h2>
+                    <br>
+                    <div id="tekst">
+                        Rust, luxe en een (h)eerlijke woonvibe! Ze zeggen wel eens dat 3 dingen belangrijk zijn bij het zoeken van een woning: locatie, locatie en locatie. En deze vrijstaande villa ligt in de gewilde woonwijk Ruitersbos in het zuidwesten van ons mooie Breda, op loopafstand van het rustgevende & mooie Mastbos, maar ook centraal ten opzichte van ons gezellige stadscentrum en de uitvalswegen. Je hebt er een fijne privacy en kunt heerlijk genieten in de zuidwest georiënteerde tuin met zout waterzwembad. Er zijn 5 slaapkamers en 3 badkamers, waarvan ook op de begane grond een slaapkamer en badkamer wat de woning levensloopbestendig maakt. Het is groot, maar toch gezellig ingedeeld. Echt een heerlijk woonhuis dus! Kom lekker kijken en voel aan of dit huis jouw nieuwe thuis kan gaan worden! <span id="dots">. . . .</span> 
+                        <div id="volledig">
+                            <br>
+                            <br>
+                            <p class="subP"> Kan je niet wachten om deze woning te bezichtigen? Ga dan snel naar de website van Van der Sande Makelaars voor de digitale rondleiding van deze woning.
+                            <br>
+                            <br>    
+                            <p class="subP"> <b>BEGANE GROND</b> </p>
+                            <br>
+                            <p class="subP">Entree / hal, met (open) trapopgang, intercom van het hek, de meterkast (17 groepen, zwembad groep, groep voor zonnepanelen, groep alarminstallatie, 4 aardlekschakelaars, digitale dag- & nachtstroom tariefmeter en digitale gasmeter), technische ruimte, garderobenis, het toilet en toegang tot de eetkamer en wasruimte.</p>
+                            <br>
+                            <p class="subP">Toilet (2020), met zwevend closet, fonteintje en ventilatie.</p>
+                            <br>  
+                            <p class="subP">Technische ruimte met de Cv-ketel (eigendom, Nefit, 2016), unit van de mechanische ventilatie, alarmsysteem, camerabewaking systeem, en de omvormer van de zonnepanelen.</p>
+                            <br>
+                            <p class="subP">Handige wasruimte, deels betegeld, met wasmachine aansluiting, plek voor de droger en fijne bergruimte.</p>
+                            <br>
+                            <p class="subP"> Eetkamer, als 'spil' van de begane grond en met inbouwkasten. Deze ruimte staat in het middelpunt en in open verbinding met de multifunctionele ruimte, de woonkamer en woonkeuken.</p>
+                            <br>
+                            <p class="subP">Verdiepte woonkamer, met sfeervolle gashaard en schuifpui naar de tuin.</p>
+                            <br>
+                            <p class="subP"> Multifunctionele kamer (voormalige garage), die bijvoorbeeld als werk- en/of speelkamer gebruikt kan worden.</p>
+                            <br>
+                            <p class="subP"> Heerlijke open woonkeuken (gerenoveerd in 2016), met kookeiland, corian werkblad, Floww kokend water kraan, Amerikaanse koel-/vriescombinatie (2019), 5-pits gasfornuis, afzuigkap (naar buiten), rvs spoelbak, oven, koffiemachine, wijn klimaatkast, vaatwasser (2019) en volop bergruimte. De afzuigkap en wijnklimaatkast zijn vermoedelijk uit 2007. Via de keuken zijn de eetkamer, bijkeuken en slaapkamer I te bereiken via loopdeuren en via een schuifpui de tuin.</p>
+                            <br>
+                            <p class="subP"> Handige bijkeuken, met de verdeler van de vloerverwarming (keuken en slaapkamer), prettige bergruimte met inbouwkastenwand, toegang tot de keuken en garage/berging.</p>
+                            <br>
+                            <p class="subP">Slaapkamer I, gelegen aan de zijkant, met walk-in-closet, inbouw spots, airconditioning, schuifpui naar de zijtui</p>
+                            <br>
+                            <p class="subP"> Aansluitend aan slaapkamer I bevindt zich badkamer I (gerenoveerd in 2011), met zwevend closet, ruime inloopdouche, 2 wastafels op meubel en ventilatie.</p>
+                            <br>
+                            <p class="subP"> <b>EERSTE VERDIEPING</b> </p>
+                            <br>
+                            <p class="subP"> Overloop, met toegang tot slaapkamers II, III, IV, V, badkamers II en III.</p>
+                            <br>
+                            <p class="subP">Badkamer II (2020), gelegen aan de voorzijde, deels betegeld, met design (handdoeken)radiator, ligbad, wastafel op meubel, wandkasten, ingebouwde audio (bluetooth), inbouw spots en ventilatie. </p>
+                            <br>
+                            <p class="subP"> Slaapkamer II, gelegen aan de voorzijde.</p>
+                            <br>
+                            <p class="subP"> Slaapkamer III, gelegen aan de achterzijde en met loopdeur naar het platte dak.</p>
+                            <br>
+                            <p class="subP"> Slaapkamer IV, gelegen aan de achterzijde en met airconditioning en inbouw spots.</p>
+                            <br>
+                            <p class="subP"> Slaapkamer V, gelegen aan de zijkant, met loopdeur naar het platte dak, airconditioning en inbouw spots.</p>
+                            <br>
+                            <p class="subP">Badkamer III (2020), gelegen aan de voorzijde, deels betegeld, met design (handdoeken)radiator, zwevend closet, inloopdouche, wastafel op meubel, inbouw spots, ingebouwde audio (bluetooth) en ventilatie.</p>
+                            <br>
+                            <p class="subP"> <b>TUIN</b> </p>
+                            <br>
+                            <p class="subP"> Mooie onder architectuur aangelegede tuin rondom, met de hoofd-/gebruikstuin (achter- & zijtuin) aan de zonnige & gewilde zuidwestkant met geautomatiseerde beregening, waterpunten aan de voor- en achterzijde van het huis, het zwembad en de achterom.</p>
+                            <br>
+                            <p class="subP"> <b>ZWEMBAD</b> </p>
+                            <br>
+                            <p class="subP"> Heerlijk & tof zoutwaterzwembad met volledig automatische pomp en zuiveringsinstallatie en jet stream. Zwembad wordt verwarmd door middel van een elektrische warmtepomp en een panelendek.</p>
+                            <br>
+                            <p class="subP"> <b>BERGINGEN</b> </p>
+                            <br>
+                            <p class="subP"> Stenen aangebouwde berging I, met tegel vloer, verwarming, inbouw spots, elektra, loopdeuren naar de oprit en bijkeuken. Van deze berging zou relatief eenvoudig een garage kunnen worden gemaakt.</p>
+                            <br>
+                            <p class="subP"> Stenen aangebouwde berging II, met elektra en toilet. Deze is bereikbaar vanuit de tuin.</p>
+                            <br>
+                            <p class="subP"> Stenen berging III, met wat bergruimte en met name de apparatuur voor het zwembad.</p>
+                            <br>
+                            <p class="subP"> <b>OPRIT</b> </p>
+                            <br>
+                            <p class="subP">Handige afsluitbare oprit met elektrisch schuifhek en plek voor circa 3 auto's, met 2 naast elkaar. </p>
+                            <br>
+                            <p class="subP"> <b>BIJZONDERHEDEN</b> </p>
+                            <br>
+                            - Het pand is grotendeels voorzien van houten kozijnen met dubbele beglazing. 1 klein raampje van het toilet op de begane grond heeft enkele beglazing;
+                            <br>
+                            - In 2020 zijn alle buitenmuren en het houtwerk aan de buitenzijde geschilderd;
+                            <br>
+                            - De pand is grotendeels voorzien van houten vloeren, stucwerk wand- en plafondafwerking;
+                            <br>
+                            - In 1998 is een gedeelte aangebouwd (keuken) en in 2011 de garage / berging en slaapkamers II en III;
+                            <br>
+                            - Er is een alarminstallatie aanwezig met zowel bewegingssensoren en een 'schil';
+                            <br>
+                            - Er is een camerabewaking systeem aanwezig rondom de woning;
+                            <br>
+                            - Slaapkamers I, IV en V hebben airconditioning met verkoeling en verwarming (blijven achter);
+                            <br>
+                            - De keuken en badkamer I hebben vloerverwarming (op ketel);
+                            <br>
+                            - Op de overloop van de eerste verdieping zit een luik naar de 'loze ruimte' boven het plafond (waar wat leidingwerk loopt en verder niet benut wordt);
+                            <br>
+                            - De badkamers boven zijn aangesloten op een waterontharder (2020; die achter blijft);
+                            <br>
+                            - Er liggen 45 zonnepanelen die in 2013 geplaatst zijn en een opbrengst hebben van ca. 8.500 KwH per jaar (blijven achter);
+                            <br>
+                            - De Willem van Oranjelaan gaat in vermoedelijk 2021, samen met de Graaf Hendrik III laan, flink op de schop. De straat wordt versmald door een bredere middenberm met bomenrij en eenbaanswegen aan beiden kanten. Voor meer informatie verwijzen wij je door naar de gemeente;
+                            <br>
+                            - Deze woning heeft energielabel D;
+                            <br>
+                            - Indicatie huidig energieverbruik:
+                            <br>
+                            Gas en elektra: ca. € 240,- per maand
+                            <br>
+                            Gebaseerd op een 4-persoonshuishouding.
+                            <br>
+                            Aan bovengenoemde opgaven kunnen geen rechten worden ontleend, aangezien de vermelde kosten variabel zijn en/of periodiek gewijzigd kunnen worden.
+                        </div>
+                    </div>
+                    <br>
+                    <button onclick="meerInfo()" id="infoKnop">Meer weergeven</button>
+                </article>
+                <article id="villa-omschrijving">
+                    <h2>Kenmerken</h2>
+                    <br>
+                    <h4>Overdrachten</h4>
+                    <br>
+                    <p class="kenmerken-links">Vraagprijs</p>
+                    <p class="kenmerken-rechts">€ 1.487.500 k.k.</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Vraagprijs per m²</p>
+                    <p class="kenmerken-rechts">€ 5.788</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Aangeboden sinds</p>
+                    <p class="kenmerken-rechts"> 3 weken</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Status</p>
+                    <p class="kenmerken-rechts"> Beschikbaar </p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Aanvaarding</p>
+                    <p class="kenmerken-rechts"> In overleg </p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Bouw</h4>
+                    <br>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Soort woonhuis</p>
+                    <p class="kenmerken-rechts">Villa, vrijstaande woning</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Soort bouw</p>
+                    <p class="kenmerken-rechts">Bestaande bouw</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Bouwjaar</p>
+                    <p class="kenmerken-rechts">1974</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Soort dak</p>
+                    <p class="kenmerken-rechts">Samengesteld dak bedekt met bitumineuze dakbedekking en pannen</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Oppervlakte en inhoud</h4>
+                    <br>
+                    <hr class="lijn">
+                    <br>
+                    <h4>gebruiksoppervlakten</h4>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Wonen</p>
+                    <p class="kenmerken-rechts">257 m²</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Overige inpandige ruimte</p>
+                    <p class="kenmerken-rechts">31 m²</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Gebouwgebonden buitenruimte</p>
+                    <p class="kenmerken-rechts">34 m²</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Externa=e bergruimte</p>
+                    <p class="kenmerken-rechts">4 m²</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Perceel</p>
+                    <p class="kenmerken-rechts">889 m²</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">inhoud</p>
+                    <p class="kenmerken-rechts">866 m²</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Indeling</h4>
+                    <br>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Aantal kamers</p>
+                    <p class="kenmerken-rechts">6 kamers (5 slaapkamers)</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Aantal badkamers</p>
+                    <p class="kenmerken-rechts">3 badkamers en 1 apart toilet</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Badkamervoorzieningen</p>
+                    <p class="kenmerken-rechts">Ligbad en 2 toiletten</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Aantal woonlagen</p>
+                    <p class="kenmerken-rechts">2 woonlagen</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Voorziening</p>
+                    <p class="kenmerken-rechts">airconditioning, alarminstallatie, mechanische ventilatie, natuurlijke ventilatie, rookkanalen, sachuifpui, TV kabel, zonnenpanelen en zwembad</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Energie</h4>
+                    <br>
+                    <p class="kenmerken-links">Energielabel</p>
+                    <p class="kenmerken-rechts">D</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Isolatie</p>
+                    <p class="kenmerken-rechts">Dubbel glas</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">verwarming</p>
+                    <p class="kenmerken-rechts">Cv-ketel, gashaard en gedeelte vloerverwarming
+                    </p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Warm water</p>
+                    <p class="kenmerken-rechts"> Cv-ketel en elektrische boiler</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Cv-ketel</p>
+                    <p class="kenmerken-rechts">Nefit (gas gestookt combiketel uit 2016, eigendom)</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Kadastrale gegevens</h4>
+                    <br>
+                    <p class="kenmerken-links">BREDA 3 6227</p>
+                    <p class="kenmerken-rechts">Kadastrale kaart</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Oppervlakte</p>
+                    <p class="kenmerken-rechts">889 m²</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">eigendomssituatie</p>
+                    <p class="kenmerken-rechts">volle eigendom</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Buitenruimte</h4>
+                    <br>
+                    <p class="kenmerken-links">ligging</p>
+                    <p class="kenmerken-rechts">In bosrijke omgeving en in woonwijk</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Tuin</p>
+                    <p class="kenmerken-rechts">Tuin rondom</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Bergruimte</h4>
+                    <br>
+                    <p class="kenmerken-links">schuur/berging</p>
+                    <p class="kenmerken-rechts">Aangdebouwde stenen berging</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">voorziening</p>
+                    <p class="kenmerken-rechts">Elektra en verwarming</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Isolatie</p>
+                    <p class="kenmerken-rechts">Geen isolatie</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Garage</h4>
+                    <br>
+                    <p class="kenmerken-links">Soort garage</p>
+                    <p class="kenmerken-rechts">Niet aanwezig, wel mogelijk</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Parkeergelegenheid</h4>
+                    <br>
+                    <p class="kenmerken-links">Soort parkeergelegenheid</p>
+                    <p class="kenmerken-rechts">Op afgesloten terrein, op eigen terrein en openbaar parkeren</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Bedrijfsruimte</h4>
+                    <br>
+                    <p class="kenmerken-links">Kantoorruimte</p>
+                    <p class="kenmerken-rechts">Niet aanwezig, wel mogelijk (inpanding)</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                </article>
+            </main>
+        </div>
+        <footer>
+            <div class="wrapper">
+                <div id="fcontainer">
+                    <ul id="flinks">
+                        <li><a href="https://www.facebook.com/" target="_blank"><img src="../media/facebook.svg" alt="facebook"></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><img src="../media/instagram.svg" alt="instagram"></a></li>
+                        <li><a href="https://www.twitter.com/" target="_blank"><img src="../media/twitter.svg" alt="twitter"></a></li>
+                    </ul>
+                    <p id="ftekst">© Copyright 2021. All rights reserved Terms of Service | Privacy Policy | Cookie Policy</p>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/villa.js"></script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/jquery.fancybox.min.js"></script>
+    </body>
+</html>

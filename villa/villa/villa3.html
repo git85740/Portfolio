@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="../css/villa.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="../media/icon.png">
+        <title>Villa4U || Capelle aan den IJssel Klinkert</title>
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <nav>
+                    <div id="nav-grid">
+                        <a id="logo" href="../index.html"><img src="../media/logo.png" alt="logo"></a>
+                        <a id="homeNav" href="../index.html">Home</a>
+                        <a id="contactNav" href="../contact/contact.html">Contact</a>
+                        <h1>Villa4U</h1>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="wrapper">
+            <main>
+                <article id="villa-fotos">   
+                    <a data-fancybox="gallery" data-caption="Achterkant Huis" href="../media/l3/main.jpg">
+                        <img src="../media/l3/main.jpg" alt="main"></a>
+                    <a data-fancybox="gallery" data-caption="Terras" href="../media/l3/sub1.jpg">
+                        <img src="../media/l3/sub1.jpg" alt="sub1"></a>
+                    <a data-fancybox="gallery" data-caption="Tuin" href="../media/l3/sub2.jpg">
+                        <img src="../media/l3/sub2.jpg" alt="sub2"></a>
+                    <a data-fancybox="gallery" data-caption="Woonkamer" href="../media/l3/sub3.jpg">
+                        <img src="../media/l3/sub3.jpg" alt="sub3"></a>          
+                    <a data-fancybox="gallery" data-caption="Keuken" href="../media/l3/sub4.jpg">
+                        <img src="../media/l3/sub4.jpg" alt="sub4"></a>
+                    <a data-fancybox="gallery" data-caption="Slaapkamer" href="../media/l3/sub5.jpg">
+                        <img src="../media/l3/sub5.jpg" alt="sub5"></a>
+                    <a data-fancybox="gallery" data-caption="Badkamer" href="../media/l3/sub6.jpg">
+                        <img src="../media/l3/sub6.jpg" alt="sub6"></a>
+                    <a data-fancybox="gallery" data-caption="Eetkamer" href="../media/l3/sub7.jpg">
+                        <img src="../media/l3/sub7.jpg" alt="sub7"></a>
+                </article>
+                <article id="villa-info">
+                    <aside id="info">
+                        <h2>Amsterdam IJburg West</h2>
+                        <p id="postcode">2905 LC 's-Gravenweg 351</p>
+                        <br>
+                        <p id="info-links">400 m² wonen</p>
+                        <p id="info-mid">2095 m² perceel</p>
+                        <p id="info-rechts">4 slaapkamers</p>
+                        <br>
+                        <strong id="prijs">€ 2.595.000 k.k.</strong>
+                    </aside>
+                    <br>
+                    <article id="villa-bied">
+                        <form id="bied">
+                            <label for="voornaam">Voornaam:</label>
+                            <input class="bied" type="text" id="voornaam" required="required" placeholder="John" name="voornaam">
+                            <label for="achternaam">Achternaam:</label>
+                            <input class="bied" type="text" id="achternaam" required="required" placeholder="Doe" name="achternaam">        
+                            <label for="getal">Prijs:</label>
+                            <input  class="bied" type="number" id="getal" required="required" placeholder="0" name="getal" min="2595000">
+                            <input type="submit" onclick="start()" id="knop">
+                        </form>
+                    </article>
+                    <div id="resultaat"></div>
+                    <br>
+                </article>
+                <hr>
+                <article id="villa-kenmerken">
+                    <h2>Omschrijving</h2>
+                    <br>
+                    <div id="tekst">
+                        <p>
+                            Zodra de elektrische poorten zich voor je openen stap je in een wereld waar zelfs de meest nuchtere Rotterdammer een beetje stil van wordt. Deze villa wordt met aandacht en passie bewoond en dat zie je aan alles. Te beginnen bij de tuin. Deze is met zorg aangelegd en wordt al 24 jaar met liefde onderhouden. Van de volgroeide fruitbomen van een Franse boomgaard tot en met de speciaal uit Italië geïmporteerde blauwe regen. En dan hebben we het nog niet eens over het heerlijke verwarmde zwembad met het bijbehorende poolhouse. En de sublieme rustige ligging direct aan de golfbaan. Of alle techniek die, bijna onzichtbaar, het wonen hier wel heel erg comfortabel maakt. Nieuwsgierig naar de rest van deze villa? Loop in gedachten even met ons mee <span id="dots">. . . .</span> 
+                        <div id="volledig">
+                            <br>
+                            <br>
+                            <b>BEGANE GROND</b>
+                            <br>
+                            Het hoge elektrisch bedienbare hek biedt toegang tot de riante tuin. De auto’s kunt u kwijt onder de (onderheide) carport of op de oprit. Uw elektrische auto kunt u ook opladen onder de carport. De aangrenzende berging herbergt alle techniek die nodig is om de tuin te verlichten en te beregenen, maar u kunt hier natuurlijk ook uw tuinspullen opbergen.
+                            <br>
+                            <br>
+                            Via de overdekte entree stapt u de hoge hal in. Wat hier opvalt is de vakkundig uitgevoerde, handgedraaide trap naar de ruimtelijke vide en de grote natuurstenen vloer. Hier vindt u ook de luxe toiletruimte, een meterkast en een verrassend flinke garderobekamer met, uiteraard, maatwerk kasten. Toegang tot de woonkeuken en nog eens 2 openslaande deuren naar de woonkamer.
+                            <br>
+                            <br>
+                            De woonkeuken maakt een groot deel uit van deze villa en is, zoals dat heet, fully-equipped. Te beginnen bij de inductie kookplaten, de wokbrander en de tapanyakiplaat en de subtiel in het plafond weggewerkte vlakke afzuigunit. Maar er is meer. Een glas vers water met ijsblokjes komt uit de koelkast, vrieskast een wijnklimaatkast van Gaggenau. En leef u uit met de magnetron, een combi-magnetronoven en een koffiemachine, een hogedruk-stoomoven, en 2 grote warmhoud-/gaarlades (alles Miele). Er is een grote hoeveelheid opbergruimte, onder andere door de lades aan beide kanten van het kookeiland. Hier kookt u met plezier en door de witte fronten en de Corian werkbladen oogt de keuken fris en clean.
+                            <br>
+                            <br>
+                            Een hele grote eettafel past met gemak in de erker van deze woonkeuken. De hoge en brede raampartij sluit aan op de tuin en kijkt uit op het zwembad. 2 Elektrisch bedienbare dakramen zorgen voor extra lichtinval in de keuken.
+                            <br>
+                            <br>
+                            Verder heeft u vanuit de keuken toegang tot de zijtuin en de werkkamer. De diepe werkkamer is gesitueerd in de ruimte die voorheen één van de inpandige garages was en heeft 2 openslaande deuren naar de zijtuin.
+                            <br>
+                            <br>
+                            2 Openslaande deuren vanuit de keuken gaan naar de sfeervolle woonkamer met massieve eikenhouten vloer. Gaat u bij de gezellige gas gestookte open haard zitten of kijkt u liever een film op een groot scherm die strak is weggewerkt in de maatwerk audio- en tv-kast? Deze woonkamer is groot genoeg voor beide toepassingen en zelfs een vleugel past hier met gemak. Vanuit de woonkamer loopt u door naar het overdekte zonneterras dat aansluit op de achtertuin en kunt u ook via de openslaande deuren naar de zijtuin.
+                            <br>
+                            <br>
+                            <b>TUIN</b>
+                            <br>
+                            Natuurlijk heeft deze vrijstaande villa een ruime tuinpartij rondom. Aan alle zijden omgeven door water en aan de achterzijde aansluitend op de golfbaan. Kosten noch moeite zijn gespaard om deze volgroeide, mooie tuin te creëren. Er zijn bijvoorbeeld vaste fruitbomen uit een Franse boomgaard, geurende rozen, volle jasmijn en bloeiende blauwe regen uit Italië. Maar ook een gazon om een balletje te trappen en een fijn plaatsje aan het water ontbreekt niet. En dan natuurlijk het fijne verwarmde zwembad, wat kunnen we hier nog verder aan toevoegen?
+                            <br>
+                            <br>
+                            Behalve de dubbele carport en de berging, is er ook nog een poolhouse annex praktijkruimte/wellness /guesthouse met een eigen ingang. Ook het poolhouse is van alle techniek en gemakken voorzien. Zo is er een wastafelunit, een stoomruimte met douche met verwarmde bank, een toiletruimte en een infrarood sauna met lichttherapie. In de tuinkamer staat en lange, moderne gashaard met een gesloten systeem voor extra rendement. De harmonica-deuren van de tuinkamer kunnen helemaal open, waardoor er een verbinding ontstaat met een overdekt terras en het zwembad. Het overdekte terras heeft ingebouwde B&O geluidsapparatuur en is verwarmd. De praktijkruimte tenslotte heeft een eigen extra ingang. In de inpandige berging tenslotte staat de technische installatie voor het verwarmde zwembad.
+                            <br>
+                            <br>
+                            <b>SLAAPVERDIEPING</b>
+                            <br>
+                            De trap leidt naar de lange hal met vide. Er zijn hier 3 slaapkamers, 2 badkamers, een separaat toilet en 1 wasruimte. De masterbedroom heeft halfhoge bergkasten, een maatwerk inloopgarderobe met hang- en legruimte, lades en een bankje. Vanuit deze slaapkamer en het aangrenzende terras kijkt u uit over de golfbaan. Aangrenzend is de master-badkamer met dubbele inloopdouche, whirlpoolbad (Riho), een dubbele wastafel, een brede spiegel met indirecte verlichting en een maatwerk wandkast. De inpandige extra ruimte is groot genoeg voor bijvoorbeeld een sauna. De masterbadkamer heeft steengrijze wand- en vloertegels.
+                            <br>
+                            <br>
+                            Slaapkamer 2. is ruim en heeft halfhoge bergkasten. Slaapkamer 3. heeft ook voldoende bergruimte door de vaste kasten en is nu in gebruik als sportkamer. Slaapkamer 4. Is in gebruik als wasruimte. Ook de was- en droogapparatuur heeft een mooie plek gekregen in een maatwerk kast op werkhoogte.
+                            <br>
+                            Tenslotte heeft deze verdieping nog een separaat toilet en een badkamer met dubbele wastafel en een inloopdouche. Alle toiletten in het huis en deze badkamer hebben o.a. fraaie, donker gemêleerde mozaïekwanden.
+                            <br>
+                            De bergruimte op de zolderverdieping (met stahoogte) is toegankelijk via een trapopgang.
+                            <br>
+                            <br>
+                            Kortom: in deze villa ontbreekt het aan niets!
+                            <br>
+                            <br>
+                            <b>DE PLUSPUNTEN VAN DEZE VILLA</b>
+                            <br>
+                            + Luxe en comfortabel
+                            <br>
+                            + Zwembad
+                            <br>
+                            + Prachtig aangelegde tuin
+                            <br>
+                            + Plus een extra poolhouse / praktijkruimte / guesthouse van 55 m2
+                            <br>
+                            + Subtiele, maar volledige techniek staat garant voor comfort (o.a. vloer- en luchtverwarming, alarminstallaties, airconditioning, verlaagde plafonds met 
+                            inbouwverlichting en audio-apparatuur, elektrisch bedienbare zonneschermen, hekwerk en daklichten)
+                            <br>
+                            + Uitsluitend maatwerk afwerkingen van het (vaste) interieur en hoogwaardig materiaalgebruik (o.a. plafondlijsten, luxe tapijt, natuursteen, corian en eikenhout)
+                            <br>
+                            + Onderheide carport voor 2 auto’s incl. oplaadpunt elektrische auto
+                            <br>
+                            + De werkkamer en de garderobekamer waren voorheen 2 inpandige garages. Desgewenst is dit weer in originele staat terug te brengen.
+                            <br>
+                            + Landelijke, rustige ligging en toch vlak bij de stad
+                            <br>
+                            <br>
+                            <b>DE (TECHNISCHE) DETAILS VAN HET HUIS</b>
+                            <br>
+                            o Bouwjaar ca. 1996
+                            <br>
+                            o Eigen grond
+                            <br>
+                            o Perceel ca. 2.095 m²
+                            <br>
+                            o Woonoppervlakte woning ca. 296 m²
+                            <br>
+                            o Gebouwgebonden buitenruimte van de woning ca. 42 m2
+                            <br>
+                            o Externe bergruimte ca. 13 m2
+                            <br>
+                            o Inhoud van de woning ca. 1.181 m2
+                            <br>
+                            o Woonoppervlakte bijgebouw ca. 55 m²
+                            <br>
+                            o Inhoud van het bijgebouw ca. 210 m2
+                            <br>
+                            o Geheel v.v. isolerende beglazing
+                            <br>
+                            o Oplevering in overleg
+                            <br>
+                            <br>
+                            <b>BIJLAGEN</b>
+                            <br>
+                            (op te vragen bij de verkopende NVM makelaar)
+                            <br>
+                            o Plattegrond
+                            <br>
+                            o Kadastrale kaart
+                            <br>
+                            o Vragenlijst
+                            <br>
+                            o Energielabel
+                            <br>
+                            o Lijst van Zaken
+                            <br>
+                            o Algemene Voorwaarden verkopende makelaar
+                            <br>
+                            <br>
+                            <b>INTERESSE IN DIT HUIS? MAAK DAN SNEL EEN AFSPRAAK!</b>
+                            <br>
+                            Bij ons staat persoonlijke aandacht voorop. Wij plannen graag een moment voor u in voor een persoonlijke bezichtiging van dit huis. Onze makelaar staat voor u klaar bij de woning en kan u alles vertellen over dit huis, terwijl u rondkijkt. En natuurlijk kunt u dan al uw vragen stellen. Zien wij u binnenkort?
+                            <br>
+                            <br>
+                            ONZE TIP: Schakel hierbij direct uw eigen NVM-aankoopmakelaar in. Uw NVM-aankoopmakelaar komt op voor uw belang en bespaart u veel tijd, geld en zorgen. Adressen van collega NVM-aankoopmakelaars vindt u op Funda.
+                            <br>
+                            <br>
+                            De gegeven informatie is met zorgvuldigheid opgesteld, aan de juistheid kunnen echter geen rechten worden ontleend. Alle verstrekte informatie moet beschouwd worden als een uitnodiging tot het doen van een aanbod of om in onderhandeling te treden.
+                        </div>
+                        <br>
+                        <button onclick="meerInfo()" id="infoKnop">Meer weergeven</button>
+                        <br>
+                    </div>
+                </article>
+                <article id="villa-omschrijving">
+                    <h2>Kenmerken</h2>
+                    <br>
+                    <h4>Overdrachten</h4>
+                    <br>
+                    <p class="kenmerken-links">Vraagprijs</p>
+                    <p class="kenmerken-rechts">€ 2.595.000 k.k.</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Vraagprijs per m²</p>
+                    <p class="kenmerken-rechts">€ 6.488</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Oorspronkelijke vraagprijs</p>
+                    <p class="kenmerken-rechts">€ 2.850.000 k.k.</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Aangeboden sinds</p>
+                    <p class="kenmerken-rechts">5+ maanden</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Status</p>
+                    <p class="kenmerken-rechts"> Beschikbaar </p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Aanvaarding</p>
+                    <p class="kenmerken-rechts"> In overleg </p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Bouw</h4>
+                    <br>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Soort woonhuis</p>
+                    <p class="kenmerken-rechts">Villa, vrijstaande woning</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Soort bouw</p>
+                    <p class="kenmerken-rechts">Bestaande bouw</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Bouwjaar</p>
+                    <p class="kenmerken-rechts">1996</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Specifiek</p>
+                    <p class="kenmerken-rechts">Gedeeltelijk gestoffeerd</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Soort dak</p>
+                    <p class="kenmerken-rechts">Samengesteld dak bedekt met riet</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Oppervlakte en inhoud</h4>
+                    <br>
+                    <hr class="lijn">
+                    <br>
+                    <h4>gebruiksoppervlakten</h4>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Wonen</p>
+                    <p class="kenmerken-rechts">400 m²</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Overige inpandige ruimte</p>
+                    <p class="kenmerken-rechts">22 m²</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Gebouwgebonden buitenruimte</p>
+                    <p class="kenmerken-rechts">71 m²</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Externe bergruimte</p>
+                    <p class="kenmerken-rechts">13 m²</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Perceel</p>
+                    <p class="kenmerken-rechts">2.095 m²</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">inhoud</p>
+                    <p class="kenmerken-rechts">1.390 m²</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Indeling</h4>
+                    <br>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Aantal kamers</p>
+                    <p class="kenmerken-rechts">11 kamers (4 slaapkamers)</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Aantal badkamers</p>
+                    <p class="kenmerken-rechts">3 badkamers en 3 aparte toilet</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Badkamervoorzieningen</p>
+                    <p class="kenmerken-rechts">Sauna en douche</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Aantal woonlagen</p>
+                    <p class="kenmerken-rechts">3 woonlagen en een zolder</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Voorziening</p>
+                    <p class="kenmerken-rechts">Airconditioning, alarminstallatie, buitenzonwering, dakraam, domotica, sauna en zwembad</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Energie</h4>
+                    <br>
+                    <p class="kenmerken-links">Voorlopig energielabel</p>
+                    <p class="kenmerken-rechts">B</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Isolatie</p>
+                    <p class="kenmerken-rechts">Dakisolatie, dubbel glas, HR-glas en vloerisolatie</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">verwarming</p>
+                    <p class="kenmerken-rechts">Cv-ketel,gashaard,heteluchtverwarming, open haard en gedeeltelijke vloerverwarming</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Warm water</p>
+                    <p class="kenmerken-rechts">Cv-ketel en gasboiler</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Cv-ketel</p>
+                    <p class="kenmerken-rechts">Gas gestookt, eigendom</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Kadastrale gegevens</h4>
+                    <br>
+                    <p class="kenmerken-links">CAPELLE AAN DEN IJSSEL A 6536</p>
+                    <p class="kenmerken-rechts">Kadastrale kaart</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Oppervlakte</p>
+                    <p class="kenmerken-rechts">2.095 m²</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">eigendomssituatie</p>
+                    <p class="kenmerken-rechts">Volle eigendom</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Buitenruimte</h4>
+                    <br>
+                    <p class="kenmerken-links">ligging</p>
+                    <p class="kenmerken-rechts">Aan rustige weg, aan water, in bosrijke omgeving, landelijk gelegen, open ligging en vrij uitzicht</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Tuin</p>
+                    <p class="kenmerken-rechts">Achtertuin, tuin rondom, voortuin en zijtuin</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Balkon/dakterras</p>
+                    <p class="kenmerken-rechts">Balkon aanwezig</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Bergruimte</h4>
+                    <br>
+                    <p class="kenmerken-links">Schuur/berging</p>
+                    <p class="kenmerken-rechts">Vrijstaande houten berging</p>
+                    <hr class="lijn">
+                    <br>
+                    <p class="kenmerken-links">Voorziening</p>
+                    <p class="kenmerken-rechts">Elektra en stromend water</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Garage</h4>
+                    <br>
+                    <p class="kenmerken-links">Soort garage</p>
+                    <p class="kenmerken-rechts">Carport</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                    <h4>Parkeergelegenheid</h4>
+                    <br>
+                    <p class="kenmerken-links">Soort parkeergelegenheid</p>
+                    <p class="kenmerken-rechts">Op eigen terrein</p>
+                    <hr class="lijn">
+                    <br>
+                    <br>
+                </article>
+            </main>
+        </div>
+        <footer>
+            <div class="wrapper">
+                <div id="fcontainer">
+                    <ul id="flinks">
+                        <li><a href="https://www.facebook.com/" target="_blank"><img src="../media/facebook.svg" alt="facebook"></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><img src="../media/instagram.svg" alt="instagram"></a></li>
+                        <li><a href="https://www.twitter.com/" target="_blank"><img src="../media/twitter.svg" alt="twitter"></a></li>
+                    </ul>
+                    <p id="ftekst">© Copyright 2021. All rights reserved Terms of Service | Privacy Policy | Cookie Policy</p>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/villa.js"></script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/jquery.fancybox.min.js"></script>
+    </body>
+</html>
